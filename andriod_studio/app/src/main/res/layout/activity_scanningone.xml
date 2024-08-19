@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:tools="http://schemas.android.com/tools">
+    <data>
+        <variable name="scanningoneVM" type="com.yuanyuansapplication.app.modules.scanningone.data.viewmodel.ScanningoneVM"/>
+    </data>
+    <LinearLayout android:gravity="start"
+        android:id="@+id/linearScanningOne"
+        android:layout_height="match_parent"
+        android:layout_width="match_parent"
+        android:orientation="vertical" android:paddingEnd="@dimen/_1pxh"
+        android:paddingStart="@dimen/_1pxh" style="@style/groupStyle">
+        <TextView android:ellipsize="end"
+            android:id="@+id/txtPageheading"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_25pxh"
+            android:layout_marginTop="@dimen/_35pxv"
+            android:layout_width="match_parent"
+            android:singleLine="true"
+            android:text="@{scanningoneVM.scanningoneModel.txtPageheading}"
+            style="@style/txtRobotoregular24" tools:text="@string/msg_looking_for_your"/>
+        <ImageView android:id="@+id/imageImage"
+            android:layout_height="@dimen/_359pxh"
+            android:layout_marginTop="@dimen/_12pxv"
+            android:layout_width="@dimen/_359pxh"
+            android:scaleType="fitXY"
+            imageRes="@{@drawable/img_scanning_circle}"
+            tools:ignore="ContentDescription" tools:src="@drawable/img_scanning_circle"/>
+        <androidx.appcompat.widget.AppCompatButton
+            android:ellipsize="end" android:gravity="center"
+            android:id="@+id/btnCancel"
+            android:layout_height="@dimen/_42pxv"
+            android:layout_marginStart="@dimen/_79pxh"
+            android:layout_marginTop="@dimen/_34pxv"
+            android:layout_width="@dimen/_200pxh"
+            android:paddingBottom="@dimen/_10pxv"
+            android:paddingEnd="@dimen/_30pxh"
+            android:paddingStart="@dimen/_30pxh"
+            android:paddingTop="@dimen/_10pxv" android:singleLine="true"
+            android:text="@string/lbl_cancel"
+            android:textAllCaps="false" style="@style/btnSolidRounded" tools:text="@string/lbl_cancel"/>
+    </LinearLayout>
+</layout>

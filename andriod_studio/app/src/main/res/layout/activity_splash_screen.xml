@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:tools="http://schemas.android.com/tools">
+    <data>
+        <variable name="splashScreenVM" type="com.yuanyuansapplication.app.modules.splashscreen.data.viewmodel.SplashScreenVM"/>
+    </data>
+    <FrameLayout android:id="@+id/frameSplashScreen"
+        android:layout_height="match_parent"
+        android:layout_width="match_parent"
+        android:paddingBottom="@dimen/_117pxv"
+        android:paddingTop="@dimen/_117pxv" style="@style/groupStyle">
+        <ImageView android:id="@+id/imageEffectOne"
+            android:layout_gravity="center"
+            android:layout_height="@dimen/_372pxh"
+            android:layout_width="@dimen/_366pxh"
+            android:scaleType="fitXY" imageRes="@{@drawable/img_effect}"
+            tools:ignore="ContentDescription" tools:src="@drawable/img_effect"/>
+        <LinearLayout android:id="@+id/linearColumnchildrens"
+            android:layout_gravity="top|center"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_3pxh"
+            android:layout_width="match_parent" android:orientation="vertical">
+            <TextView android:ellipsize="end"
+                android:id="@+id/txtChildrensafty"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_119pxh"
+                android:layout_width="wrap_content"
+                android:singleLine="true"
+                android:text="@{splashScreenVM.splashScreenModel.txtChildrensafty}"
+                style="@style/txtInterregular18" tools:text="@string/lbl_childrensafty"/>
+            <ImageView android:id="@+id/imageChildrensafety"
+                android:layout_height="@dimen/_354pxh"
+                android:layout_marginTop="@dimen/_12pxv"
+                android:layout_width="match_parent"
+                android:scaleType="fitXY"
+                cornerRadius="@{@dimen/_45pxh}"
+                imageRes="@{@drawable/img_chris_lee_70l1t}"
+                tools:ignore="ContentDescription" tools:src="@drawable/img_chris_lee_70l1t"/>
+        </LinearLayout>
+    </FrameLayout>
+</layout>

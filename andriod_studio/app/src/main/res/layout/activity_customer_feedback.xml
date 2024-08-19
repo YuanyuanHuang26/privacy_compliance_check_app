@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+    <data>
+        <variable
+            name="customerFeedbackVM"
+            type="com.yuanyuansapplication.app.modules.customerfeedback.data.viewmodel.CustomerFeedbackVM" />
+    </data>
+    <FrameLayout
+        android:id="@+id/frameCustomerFeedback"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        style="@style/groupStylewhite_1">
+
+        <LinearLayout
+            android:id="@+id/linearColumnCustomerFeedback"
+            style="@style/groupStyle_1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:orientation="vertical"
+            android:paddingStart="@dimen/_39pxh"
+            android:paddingTop="@dimen/_26pxv"
+            android:paddingEnd="@dimen/_39pxh"
+            android:paddingBottom="@dimen/_26pxv">
+
+            <!-- Header Section -->
+            <LinearLayout
+                android:id="@+id/linearRowCustomerFeedbackHeader"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="end"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/txtCustomerFeedback"
+                    style="@style/txtRobotoregular16"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="bottom"
+                    android:text="@{customerFeedbackVM.customerFeedbackModel.txtCustomerFeedback}"
+                    tools:text="Customer Feedback" />
+
+                <LinearLayout
+                    android:id="@+id/linearProfile"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:id="@+id/imageProfile"
+                        circular="@{true}"
+                        imageRes="@{@drawable/img_ellipse_12}"
+                        android:layout_width="@dimen/_24pxh"
+                        android:layout_height="@dimen/_24pxh"
+                        android:layout_gravity="center_horizontal"
+                        android:scaleType="centerCrop"
+                        tools:ignore="ContentDescription"
+                        tools:src="@drawable/img_ellipse_12" />
+
+                    <TextView
+                        android:id="@+id/txtSignout"
+                        style="@style/txtRobotoregular8"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/_3pxv"
+                        android:ellipsize="end"
+                        android:gravity="center_horizontal"
+                        android:singleLine="true"
+                        android:text="@{customerFeedbackVM.customerFeedbackModel.txtSignout}"
+                        tools:text="Sign out" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <!-- Feedback Section -->
+            <TextView
+                android:id="@+id/txtRateExperience"
+                style="@style/txtRobotoregular16"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_26pxv"
+                android:text="@{customerFeedbackVM.customerFeedbackModel.txtRateExperience}"
+                tools:text="Rate your experience" />
+
+            <RatingBar
+                android:id="@+id/ratingBar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:numStars="5"
+                android:stepSize="1.0"
+                android:layout_marginTop="@dimen/_16pxv"
+                android:rating="@{customerFeedbackVM.customerFeedbackModel.rating}" />
+
+            <TextView
+                android:id="@+id/txtProvideFeedback"
+                style="@style/txtRobotoregular16"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_26pxv"
+                android:text="@{customerFeedbackVM.customerFeedbackModel.txtProvideFeedback}"
+                tools:text="Provide your feedback" />
+
+            <EditText
+                android:id="@+id/edtFeedback"
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:layout_marginTop="@dimen/_16pxv"
+                android:hint="@{customerFeedbackVM.customerFeedbackModel.hintFeedback}"
+                tools:text="Please provide your feedback here"
+                />
+
+            <Button
+                android:id="@+id/btnSubmitFeedback"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_16pxv"
+                android:text="@{customerFeedbackVM.customerFeedbackModel.txtSubmitFeedback}"
+                tools:text="Submit Feedback"
+                 />
+        </LinearLayout>
+
+        <!-- Navigation Bar -->
+        <LinearLayout
+            android:id="@+id/linearRowNavigation"
+            android:layout_gravity="bottom|start"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_80pxh"
+            android:orientation="horizontal"
+            android:padding="@dimen/_12pxh"
+            style="@style/groupStylecornerRadius_3">
+
+            <TextView
+                android:id="@+id/txtOverallStatus"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="@{customerFeedbackVM.customerFeedbackModel.txtOverallStatus}"
+                tools:text="Overall Status"
+                style="@style/txtRobotoregular10_1" />
+
+            <TextView
+                android:id="@+id/txtDetailedReport"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="@{customerFeedbackVM.customerFeedbackModel.txtDetailedReport}"
+                tools:text="Detailed Report"
+                style="@style/txtRobotoregular10_1" />
+
+            <TextView
+                android:id="@+id/txtCustomerFeedbackLabel"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="@{customerFeedbackVM.customerFeedbackModel.txtCustomerFeedbackLabel}"
+                tools:text="Customer Feedback"
+                style="@style/txtRobotoregular10_1" />
+
+            <TextView
+                android:id="@+id/txtPairOther"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="@{customerFeedbackVM.customerFeedbackModel.txtPairOther}"
+                tools:text="Pair Other"
+                style="@style/txtRobotoregular10_1" />
+
+        </LinearLayout>
+    </FrameLayout>
+</layout>

@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:tools="http://schemas.android.com/tools">
+    <data>
+        <variable name="pairedVM" type="com.yuanyuansapplication.app.modules.paired.data.viewmodel.PairedVM"/>
+    </data>
+    <FrameLayout android:id="@+id/framePaired"
+        android:layout_height="match_parent"
+        android:layout_width="match_parent" style="@style/groupStylewhite_1">
+        <TextView android:ellipsize="end" android:gravity="top|start"
+            android:id="@+id/txtPageheading"
+            android:layout_gravity="top|start"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_53pxh"
+            android:layout_marginTop="@dimen/_96pxv"
+            android:layout_width="match_parent"
+            android:singleLine="true"
+            android:text="@{pairedVM.pairedModel.txtPageheading}"
+            style="@style/txtRobotoregular24" tools:text="@string/msg_looking_for_your2"/>
+
+        <View
+            android:id="@+id/viewBgOne"
+            android:layout_width="@dimen/_375pxh"
+            android:layout_height="807dp"
+            android:layout_gravity="center"
+            android:background="@drawable/rectangle_gradient_s_indigo_900_01_e_indigo_500" />
+        <FrameLayout android:id="@+id/frameStackeffectOne"
+            android:layout_gravity="center"
+            android:layout_height="@dimen/_372pxv" android:layout_width="@dimen/_366pxh">
+            <ImageView android:id="@+id/imageEffectOne"
+                android:layout_gravity="center"
+                android:layout_height="@dimen/_372pxh"
+                android:layout_width="match_parent"
+                android:scaleType="fitXY"
+                imageRes="@{@drawable/img_effect}"
+                tools:ignore="ContentDescription" tools:src="@drawable/img_effect"/>
+            <LinearLayout android:id="@+id/linearColumnpaired"
+                android:layout_gravity="center"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/_59pxh"
+                android:layout_marginStart="@dimen/_53pxh"
+                android:layout_width="match_parent"
+                android:orientation="vertical"
+                android:paddingBottom="@dimen/_52pxv"
+                android:paddingEnd="@dimen/_22pxh"
+                android:paddingStart="@dimen/_22pxh"
+                android:paddingTop="@dimen/_52pxv" style="@style/groupStylegray_300_99cornerRadius">
+                <TextView android:id="@+id/txtPaired"
+                    android:layout_height="match_parent"
+                    android:layout_marginStart="@dimen/_25pxh"
+                    android:layout_marginTop="@dimen/_5pxv"
+                    android:layout_width="match_parent"
+                    android:text="@{pairedVM.pairedModel.txtPaired}"
+                    style="@style/txtRobotoregular32" tools:text="@string/msg_paired_successfully"/>
+            </LinearLayout>
+        </FrameLayout>
+    </FrameLayout>
+</layout>

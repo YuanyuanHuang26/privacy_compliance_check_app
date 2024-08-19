@@ -1,0 +1,33 @@
+[
+    {
+        "name": "ccpa",
+        "questions": [
+            {"questionId": 1, "questionText": "Have you created a comprehensive Privacy Policy informing consumers at or before the point of data collection about how data is collected, retained, and used?"},
+            {"questionId": 2, "questionText": "Does your Privacy Policy inform consumers about the categories of personal data collected and the purposes for which it is collected?"},
+            {"questionId": 3, "questionText": "Does your Privacy Policy disclose whether collected data is sold to or shared with third parties and identify those third parties?"},
+            {"questionId": 4, "questionText": "Does your Privacy Policy inform website visitors of their privacy rights and how to exercise them?"},
+            {"questionId": 5, "questionText": "Is your Privacy Policy clear, easy to understand, and available in the languages in which your business provides information in California?"},
+            {"questionId": 6, "questionText": "Have you implemented a privacy notice with information about data use, consumers’ rights, and user options like consent opt-out?"},
+            {"questionId": 7, "questionText": "Do you enable consumers to exercise their rights, such as opting out, via a banner or pop-up when they visit your site?"},
+            {"questionId": 8, "questionText": "Have you informed users about their right to know what personal data is collected and how it is used or shared?"},
+            {"questionId": 9, "questionText": "Have you informed users about their right to delete personal data that has been collected about them, with exceptions?"},
+            {"questionId": 10, "questionText": "Have you informed users about their right to data portability, providing a copy of personal data in a portable and readily usable format?"},
+            {"questionId": 11, "questionText": "Have you informed users about their right to non-discrimination for exercising privacy rights?"},
+            {"questionId": 12, "questionText": "Have you informed users about their right to opt-out of the sale or sharing of their personal data?"},
+            {"questionId": 13, "questionText": "Have you obtained consent from a parent or guardian before collecting personal data from children?"},
+            {"questionId": 14, "questionText": "Do you review and update your Privacy Policy every 12 months, reflecting any changes in operations or law?"},
+            {"questionId": 15, "questionText": "Do you ensure the effective date of your Privacy Policy is updated every 12 months, even if no other changes are made?"},
+            {"questionId": 16, "questionText": "Do you re-offer opt-in consent to consumers who have opted out, presenting the option to opt-in again after 12 months?"},
+            {"questionId": 17, "questionText": "Is there a clear and conspicuous “Do Not Sell Or Share My Personal Information” link easily accessible on your website homepage?"},
+            {"questionId": 18, "questionText": "Do you provide a “Limit The Use of My Sensitive Personal Information” link to enable opt-out?"},
+            {"questionId": 19, "questionText": "Do you obtain explicit consent from the data subject before processing sensitive personal data or personal data from minors between the ages of 13 and 16?"},
+            {"questionId": 20, "questionText": "Do you obtain consent from a parent or legal guardian for the collection of personal data from children aged 13 or younger?"},
+            {"questionId": 21, "questionText": "Do you provide at least two contact options, such as a toll-free phone number, web form, or email, for consumers to reach you?"},
+            {"questionId": 22, "questionText": "Have you set up a system to enable the submission of Data Subject Access Requests (DSARs) allowing consumers to verify their identity and residency?"},
+            {"questionId": 23, "questionText": "Have you set up a system to enable submissions for verification requests, explaining why a request could not be verified and allowing consumers to rectify?"},
+            {"questionId": 24, "questionText": "Do you keep track of all Data Subject Access Requests (DSARs) and your business responses?"}
+        ]
+    }
+]
+
+

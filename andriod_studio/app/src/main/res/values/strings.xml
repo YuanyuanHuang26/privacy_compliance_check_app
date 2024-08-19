@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<resources>
+  <string name="header_text">Xplora Detailed Report</string>
+    <string name="profile_image">Profile Image</string>
+    <string name="warning_icon">Warning Icon</string>
+  <string name="app_name">yuanyuan_s_application4</string>
+    <string name="loading">Loading…</string>
+    <string name="no_internet_connection">No internet connection!</string>
+<string name="msg">****************</string>
+  <string name="lbl_usa">USA</string>
+  <string name="lbl_continue">Continue</string>
+  <string name="msg_customer_feedback">Customer
+
+Feedback</string>
+  <string name="lbl_choose_the_area">Choose the area</string>
+  <string name="lbl_sign_out">sign out</string>
+  <string name="lbl_xplora2">xplora</string>
+  <string name="msg_looking_for_your2">Looking for your vehicle</string>
+  <string name="msg_user_consent_for">User Consent for Sensitive Data: Is separate explicit consent obtained for sensitive data such as health, racial, or ethnic information?</string>
+  <string name="lbl_total_scores">Total SCORES</string>
+  <string name="lbl_south_africa">South Africa </string>
+  <string name="msg_don_t_have_an_account">Don\u2019t have an account?</string>
+  <string name="msg_already_have_an">Already have an account?</string>
+  <string name="msg_consent_acquisition">Consent Acquisition: Is explicit consent obtained during the sign-up process?</string>
+  <string name="msg_someone_gmail_com">someone@gmail.com</string>
+  <string name="lbl_phone_number">Phone number</string>
+  <string name="lbl_garett">garett</string>
+  <string name="msg_keep_me_logged_in">keep me logged in</string>
+  <string name="msg_user_consent_and">User Consent and Data Usage</string>
+  <string name="lbl_e_mail">E-Mail</string>
+  <string name="msg_chose_your_smartwatch">Chose your smartwatch</string>
+  <string name="msg_looking_for_your">Looking for your smartwatch</string>
+  <string name="lbl_caution_1">CAUTION 1</string>
+  <string name="lbl_sign_in">Sign In</string>
+  <string name="lbl_caution_2">CAUTION 2</string>
+  <string name="msg_purpose_limitation">Purpose Limitation: Are the purposes for collecting personal data clearly stated?</string>
+  <string name="lbl_sign_in2">Sign in</string>
+  <string name="lbl_scan_again">scan again</string>
+  <string name="lbl_sign_up">Sign up</string>
+  <string name="lbl_password">Password</string>
+  <string name="lbl_sign_up2">Sign Up</string>
+  <string name="lbl_xplora">xplora </string>
+  <string name="msg_lets_connect_your">Lets connect your smartwatch</string>
+  <string name="msg_forgot_password">forgot password?</string>
+  <string name="lbl_cancel">cancel</string>
+  <string name="msg_xplora_detailed">xplora
+detailed report</string>
+  <string name="lbl_switzerland">Switzerland</string>
+  <string name="lbl_2451369850">2451369850</string>
+  <string name="msg_pair_other_device">Pair
+Other Device</string>
+  <string name="lbl_overall_status">Overall
+Status</string>
+  <string name="lbl_childrensafty">ChildrenSafety</string>
+  <string name="msg_paired_successfully">Paired 
+Successfully</string>
+  <string name="msg_xplora_customer">xplora
+Customer Feedback</string>
+  <string name="lbl_scan">scan</string>
+  <string name="lbl_eu">EU</string>
+  <string name="lbl_china">China</string>
+  <string name="lbl_detailed_report">Detailed
+Report</string>
+</resources>

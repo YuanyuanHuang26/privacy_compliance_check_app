@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:tools="http://schemas.android.com/tools">
+    <data>
+        <variable name="addingWatchVM" type="com.yuanyuansapplication.app.modules.addingwatch.data.viewmodel.AddingWatchVM"/>
+    </data>
+    <LinearLayout android:gravity="start"
+        android:id="@+id/linearAddingWatch"
+        android:layout_height="match_parent"
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:paddingBottom="@dimen/_64pxv"
+        android:paddingEnd="@dimen/_18pxh"
+        android:paddingStart="@dimen/_18pxh"
+        android:paddingTop="@dimen/_64pxv" style="@style/groupStyle">
+
+        <TextView
+            android:id="@+id/txtPageheading"
+            style="@style/txtRobotoregular24"
+            android:layout_width="450dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_33pxv"
+            android:ellipsize="end"
+            android:singleLine="true"
+            android:text="@{addingWatchVM.addingWatchModel.txtPageheading}"
+            tools:text="@string/msg_lets_connect_your" />
+        <FrameLayout android:id="@+id/frameStackview"
+            android:layout_height="@dimen/_199pxv"
+            android:layout_marginStart="@dimen/_62pxh"
+            android:layout_marginTop="@dimen/_94pxv" android:layout_width="@dimen/_199pxh">
+            <View
+                android:background="@drawable/rectangle_gradient_s_blue_gray_900_63_e_indigo_900_63_radius_77"
+                android:id="@+id/viewView"
+                android:layout_gravity="center"
+                android:layout_height="@dimen/_155pxh" android:layout_width="@dimen/_155pxh"/>
+            <FrameLayout android:id="@+id/frameStackplusOne"
+                android:layout_gravity="center"
+                android:layout_height="@dimen/_199pxv"
+                android:layout_width="@dimen/_199pxh"
+                android:paddingBottom="@dimen/_71pxv"
+                android:paddingEnd="@dimen/_56pxh"
+                android:paddingStart="@dimen/_56pxh"
+                android:paddingTop="@dimen/_71pxv" style="@style/groupStylecornerRadius">
+
+                <ImageView
+                    android:id="@+id/imagePlusOne"
+                    android:layout_width="@dimen/_75pxh"
+                    android:layout_height="@dimen/_56pxh"
+                    android:layout_gravity="end"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/img_vector"
+                    tools:ignore="ContentDescription"
+                    tools:src="@drawable/img_vector" />
+            </FrameLayout>
+        </FrameLayout>
+        <View android:id="@+id/viewViewOne"
+            android:layout_height="@dimen/_114pxv" android:layout_width="@dimen/_200pxh"/>
+        <androidx.appcompat.widget.AppCompatButton
+            android:ellipsize="end" android:gravity="center"
+            android:id="@+id/btnScan"
+            android:layout_height="@dimen/_42pxv"
+            android:layout_marginStart="@dimen/_62pxh"
+            android:layout_width="@dimen/_200pxh"
+            android:paddingBottom="@dimen/_10pxv"
+            android:paddingEnd="@dimen/_30pxh"
+            android:paddingStart="@dimen/_30pxh"
+            android:paddingTop="@dimen/_10pxv" android:singleLine="true"
+            android:text="@string/lbl_scan" android:textAllCaps="false"
+            style="@style/btnSolidRounded" tools:text="@string/lbl_scan"/>
+    </LinearLayout>
+</layout>

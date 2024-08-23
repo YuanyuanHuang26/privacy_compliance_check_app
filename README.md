@@ -15,7 +15,9 @@ This Android application is designed to perform compliance checking for smartwat
 - **Flask**: 1.1.2 or later
 
 ## Video Demonstration
-
+<video width="100%" controls>
+  <source src="compliance_check_app.mp4" type="video/mp4">
+</video>
 [![Smartwatch Compliance Checker Video](https://img.youtube.com/vi/yourvideolink/maxresdefault.jpg)](https://www.youtube.com/watch?v=yourvideolink)
 
 Click the image above to watch a video demonstration of the Smartwatch Compliance Checker app in action.

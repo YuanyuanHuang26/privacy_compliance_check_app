@@ -17,8 +17,5 @@ This Android application is designed to perform compliance checking for smartwat
 ## Video Demonstration
 <video width="100%" controls>
   <source src="compliance_check_app.mp4" type="video/mp4">
+  Your browser does not support the video tag.
 </video>
-[![Smartwatch Compliance Checker Video](https://img.youtube.com/vi/yourvideolink/maxresdefault.jpg)](https://www.youtube.com/watch?v=yourvideolink)
-
-Click the image above to watch a video demonstration of the Smartwatch Compliance Checker app in action.
-

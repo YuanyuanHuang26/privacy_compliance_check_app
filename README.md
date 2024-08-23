@@ -15,7 +15,4 @@ This Android application is designed to perform compliance checking for smartwat
 - **Flask**: 1.1.2 or later
 
 ## Video Demonstration
-<video width="100%" controls>
-  <source src="compliance_check_app.mp4" type="video/mp4">
-  Your browser does not support the video tag.
-</video>
+[Click here to watch the video demonstration](compliance_check_app.mp4)
